@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уход за кошками | Все о котах</title>
+    <meta name="description" content="Рекомендации по уходу, питанию и здоровью кошек.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">🐱 Все о котах</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="breeds.html">Породы</a></li>
+                <li><a href="care.html" class="active">Уход</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Уход за кошками</h1>
+        <img src="images/care-cat.jpg" alt="Котенок ест из миски" class="care-img">
+        
+        <section id="feeding">
+            <h2><i class="fas fa-utensils"></i> Питание</h2>
+            <p>Кошки — облигатные хищники. Их рацион должен содержать:</p>
+            <ul>
+                <li>Высококачественный белок (мясо, рыба)</li>
+                <li>Таурин (важен для зрения)</li>
+                <li>Вода в достаточном количестве</li>
+            </ul>
+        </section>
+
+        <section id="grooming">
+            <h2><i class="fas fa-shower"></i> Гигиена</h2>
+            <div class="tip">
+                <h3>Уход за шерстью</h3>
+                <p>Короткошерстных кошек вычесывают 1-2 раза в неделю, длинношерстных — ежедневно.</p>
+            </div>
+            <div class="tip">
+                <h3>Стрижка когтей</h3>
+                <p>Используйте специальные когтерезки. Не повреждайте "живую" часть когтя.</p>
+            </div>
+        </section>
+
+        <section id="health">
+            <h2><i class="fas fa-heartbeat"></i> Здоровье</h2>
+            <p>Обязательные процедуры:</p>
+            <ol>
+                <li>Ежегодная вакцинация</li>
+                <li>Регулярная дегельминтизация</li>
+                <li>Профилактика блох и клещей</li>
+                <li>Стерилизация/кастрация (если не планируете разведение)</li>
+            </ol>
+        </section>
+
+        <!-- Форма подписки -->
+        <section class="subscribe">
+            <h2>Получать советы по уходу</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Сайт "Все о котах" | <a href="sitemap.xml">Карта сайта</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
