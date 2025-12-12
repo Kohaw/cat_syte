@@ -1,26 +1,4 @@
-// Обработка формы подписки
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('subscribe-form');
-    const message = document.getElementById('form-message');
-    
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = form.querySelector('input[type="email"]').value;
-            
-            // Имитация отправки
-            message.textContent = `Спасибо! На ${email} отправлено письмо с подтверждением.`;
-            message.style.color = '#4CAF50';
-            form.reset();
-            
-            // Через 5 секунд скрыть сообщение
-            setTimeout(() => {
-                message.textContent = '';
-            }, 5000);
-        });
-    }
-    
-    // Подсветка активной страницы в навигации
+ // Подсветка активной страницы в навигации
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-menu a');
     
