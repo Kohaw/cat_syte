@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Sitemap: https://kohaw.github.io/cat_syte/sitemap.xml
