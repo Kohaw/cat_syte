@@ -487,3 +487,143 @@ footer {
     font-size: 4.5rem;
   }
 }
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 500px;
+  width: 90%;
+  padding: 2.5rem 2rem;
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7a6b5e;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: #2d2a24;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2d2a24;
+  letter-spacing: -0.5px;
+}
+
+/* Форма */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #5a4e44;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e0d6cc;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.2s;
+  background: #fcf8f4;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: #c67a5c;
+}
+.form-group input.error {
+  border-color: #d9534f;
+}
+.error-message {
+  display: none;
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+.error-message.visible {
+  display: block;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Экран успеха */
+.success-icon {
+  font-size: 4rem;
+  color: #5cb85c;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.success-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.3rem;
+  color: #2d2a24;
+}
+.success-subtext {
+  font-size: 1rem;
+  text-align: center;
+  color: #5a4e44;
+  margin-bottom: 2rem;
+}
+
+/* Адаптив модалки */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 2rem 1.2rem;
+  }
+  .modal-title {
+    font-size: 1.4rem;
+  }
+}
