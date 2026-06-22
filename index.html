@@ -199,12 +199,13 @@
   </div>
 </footer>
 
-<!-- МОДАЛЬНОЕ ОКНО -->
+<!-- ===== МОДАЛЬНОЕ ОКНО ===== -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content">
+    <!-- Кнопка закрытия (крестик) -->
     <button class="modal-close" id="modalClose">&times;</button>
 
-    <!-- Состояние 1: Форма -->
+    <!-- Состояние 1: Форма записи -->
     <div id="formState">
       <h2 class="modal-title">ЗАПИСЬ НА ПРОБНОЕ ЗАНЯТИЕ</h2>
       <form id="bookingForm" novalidate>
@@ -222,7 +223,7 @@
       </form>
     </div>
 
-    <!-- Состояние 2: Успех -->
+    <!-- Состояние 2: Экран успеха (изначально скрыт) -->
     <div id="successState" style="display: none;">
       <div class="success-icon">✔</div>
       <h2 class="modal-title">APT-АКАДЕМИЯ</h2>
