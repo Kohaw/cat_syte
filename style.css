@@ -1,4 +1,3 @@
-/* ===== RESET & БАЗА ===== */
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +98,7 @@ nav a:hover {
   color: #2d2a24;
 }
 
-/* ===== ГЕРОЙ ===== */
+/* ===== ГЛАВНАЯ ===== */
 .hero {
   padding: 4rem 0 5rem;
   background: linear-gradient(135deg, #f7efe8 0%, #f0e4d9 100%);
