@@ -632,3 +632,12 @@ footer {
     height: 150px;
   }
 }
+@media (max-width: 480px) {
+  .info-start .btn {
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
+}
