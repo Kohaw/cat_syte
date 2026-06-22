@@ -493,7 +493,14 @@ footer {
   color: #5a4e44;
   margin-bottom: 2rem;
 }
-
+.goods-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 1rem;
+  display: block;
+}
 /* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 1024px) {
   .hero h1 { font-size: 2.8rem; }
@@ -545,4 +552,9 @@ footer {
 @media (min-width: 1920px) {
   .container { max-width: 1400px; }
   .hero h1 { font-size: 4.5rem; }
+}
+@media (max-width: 480px) {
+  .goods-image {
+    height: 150px;
+  }
 }
