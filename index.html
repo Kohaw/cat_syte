@@ -232,5 +232,32 @@
     </div>
   </div>
 </div>
+  <script>
+  // ===== АККОРДЕОН FAQ (работает 100%) =====
+  document.addEventListener('DOMContentLoaded', function() {
+    // Находим все элементы аккордеона
+    var faqItems = document.querySelectorAll('.faq-item');
+
+    // Если элементы найдены
+    if (faqItems.length > 0) {
+      faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq-question');
+        // Если внутри есть кнопка-вопрос
+        if (question) {
+          question.addEventListener('click', function(e) {
+            // Закрываем все другие пункты
+            faqItems.forEach(function(other) {
+              if (other !== item) {
+                other.classList.remove('active');
+              }
+            });
+            // Переключаем текущий
+            item.classList.toggle('active');
+          });
+        }
+      });
+    }
+  });
+</script>
 </body>
 </html>
